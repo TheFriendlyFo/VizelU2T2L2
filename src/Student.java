@@ -44,9 +44,7 @@ public class Student {
 
     public double averageTestScore() {
         double av = 0;
-
         for (Double score : scores) {av += score;}
-
         return av / scores.size();
     }
 
@@ -57,6 +55,7 @@ public class Student {
         System.out.printf("Graduation year: %s\n", gradYear);
         System.out.printf("Number of tests: %s\n", scores.size());
         System.out.printf("Test average: %s\n", averageTestScore());
+        System.out.printf("Highest score: %s", getHighestGrade());
         System.out.printf("Passing: %s\n", isPassing() ? "Yes" : "No");
     }
 }
